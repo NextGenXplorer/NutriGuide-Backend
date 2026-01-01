@@ -11,6 +11,16 @@
 
 A Node.js/Express API for the NutriGuide Flutter app - Indian nutrition database with BMI calculation and personalized food recommendations.
 
+## 🔗 Links
+
+| | Link |
+|---|---|
+| 📄 **Privacy Policy** | [nutri-guide-backend.vercel.app/privacy-policy](https://nutri-guide-backend.vercel.app/privacy-policy) |
+| 📸 **Instagram** | [@nexgenxplorerr](https://www.instagram.com/nexgenxplorerr) |
+| ▶️ **YouTube** | [@nexgenxplorer](https://youtube.com/@nexgenxplorer) |
+| 📱 **Play Store** | [NextGenX Apps](https://play.google.com/store/apps/dev?id=8262374975871504599) |
+| 📧 **Email** | [nxgextra@gmail.com](mailto:nxgextra@gmail.com) |
+
 ## Features
 
 - **1014 Indian Foods** - Complete nutritional data from INDB 2024.11
@@ -140,4 +150,17 @@ See [API.md](./API.md) for complete API documentation with examples.
 
 ## License
 
-ISC
+ISC License - see [LICENSE](./LICENSE) for details.
+
+---
+
+<p align="center">
+  Made with ❤️ by <a href="https://play.google.com/store/apps/dev?id=8262374975871504599">NextGenX</a>
+</p>
+
+<p align="center">
+  <a href="https://www.instagram.com/nexgenxplorerr"><img src="https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white" alt="Instagram"></a>
+  <a href="https://youtube.com/@nexgenxplorer"><img src="https://img.shields.io/badge/YouTube-FF0000?logo=youtube&logoColor=white" alt="YouTube"></a>
+  <a href="https://play.google.com/store/apps/dev?id=8262374975871504599"><img src="https://img.shields.io/badge/Play_Store-414141?logo=google-play&logoColor=white" alt="Play Store"></a>
+  <a href="mailto:nxgextra@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white" alt="Email"></a>
+</p>
