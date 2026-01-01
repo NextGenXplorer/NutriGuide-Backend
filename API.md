@@ -1,11 +1,21 @@
 # NutriGuide API Documentation
 
+![API](https://img.shields.io/badge/API-Live-success)
+![Version](https://img.shields.io/badge/Version-1.0.0-blue)
+![Foods](https://img.shields.io/badge/Foods-1014-orange)
+
 Complete API reference for NutriGuide Backend - Indian Nutrition Database with BMI & Food Recommendations.
 
 ---
 
 ## Base URL
 
+**Production (Vercel):**
+```
+https://nutri-guide-backend.vercel.app
+```
+
+**Local Development:**
 ```
 http://localhost:3000
 ```
@@ -610,7 +620,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class NutriGuideAPI {
-  static const String baseUrl = 'http://YOUR_SERVER_IP:3000';
+  static const String baseUrl = 'https://nutri-guide-backend.vercel.app';
 
   // Calculate BMI and get recommendations
   static Future<Map<String, dynamic>> getSmartRecommendations({
@@ -727,9 +737,40 @@ npm start
 
 ---
 
+## Try It Live
+
+Test the API directly with curl:
+
+```bash
+# Health Check
+curl https://nutri-guide-backend.vercel.app/
+
+# Get Stats
+curl https://nutri-guide-backend.vercel.app/api/stats
+
+# Search Foods
+curl "https://nutri-guide-backend.vercel.app/api/food/search?q=biryani"
+
+# Calculate BMI
+curl -X POST https://nutri-guide-backend.vercel.app/api/bmi/calculate \
+  -H "Content-Type: application/json" \
+  -d '{"height": 170, "weight": 70, "age": 25, "gender": "male"}'
+
+# Smart Recommendations
+curl -X POST https://nutri-guide-backend.vercel.app/api/food/smart-recommend \
+  -H "Content-Type: application/json" \
+  -d '{"height": 170, "weight": 75, "age": 25, "gender": "male", "diet": "veg"}'
+
+# High Protein Foods
+curl "https://nutri-guide-backend.vercel.app/api/food/high/protein?diet=veg&limit=5"
+```
+
+---
+
 ## Notes
 
 1. All nutritional values are per 100g unless specified
 2. `serving_*` fields contain per-serving values
 3. `is_vegetarian` and `is_vegan` are auto-classified based on food name
 4. Goal scores (0-100) indicate food suitability for weight goals
+5. CORS is enabled for all origins
