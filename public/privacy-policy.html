@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - NutriGuide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 36px;
+        }
+
+        h1 {
+            color: #1a1a2e;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .last-updated {
+            background: #f0f4ff;
+            color: #667eea;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        h2 {
+            color: #1a1a2e;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 30px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f4ff;
+        }
+
+        h2 .icon {
+            margin-right: 10px;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 15px 0;
+        }
+
+        li {
+            padding: 12px 15px;
+            background: #f8f9ff;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        li .bullet {
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            flex-shrink: 0;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .data-table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: 600;
+        }
+
+        .data-table tr:hover {
+            background: #f8f9ff;
+        }
+
+        .permission-card {
+            background: #f8f9ff;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #667eea;
+        }
+
+        .permission-card h3 {
+            color: #1a1a2e;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .permission-card p {
+            color: #666;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #4caf50;
+        }
+
+        .highlight-box h3 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .highlight-box p {
+            color: #33691e;
+            margin: 0;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            padding: 30px;
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-box h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-box a {
+            color: white;
+            text-decoration: none;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 25px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .contact-box a:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <div class="logo">🥗</div>
+                <h1>Privacy Policy</h1>
+                <p class="subtitle">NutriGuide - Your Personal Nutrition Companion</p>
+                <span class="last-updated">Last Updated: January 2025</span>
+            </div>
+
+            <p>Welcome to NutriGuide! Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your personal information when you use our mobile application.</p>
+
+            <h2><span class="icon">📋</span> Information We Collect</h2>
+            <p>To provide personalized nutrition recommendations and calculate your BMI, we collect the following information:</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Name</strong></td>
+                        <td>To personalize your experience and address you in the app</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Age</strong></td>
+                        <td>To calculate accurate daily calorie and nutritional needs</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gender</strong></td>
+                        <td>To determine metabolic rate and nutritional requirements</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Height</strong></td>
+                        <td>To calculate BMI and ideal body weight range</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Weight</strong></td>
+                        <td>To calculate BMI and personalized calorie recommendations</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Diet Preference</strong></td>
+                        <td>To filter food recommendations (Veg/Non-Veg/Vegan)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2><span class="icon">📱</span> App Permissions</h2>
+            <p>NutriGuide requires the following permissions to function properly:</p>
+
+            <div class="permission-card">
+                <h3>📷 Camera Access</h3>
+                <p>Used to scan food items or barcodes for quick nutritional information lookup. Camera data is processed locally and not stored on our servers.</p>
+            </div>
+
+            <div class="permission-card">
+                <h3>🔔 Notification Access</h3>
+                <p>Used to send you meal reminders, hydration alerts, and personalized nutrition tips. You can disable notifications at any time in your device settings.</p>
+            </div>
+
+            <div class="permission-card">
+                <h3>🌐 Internet Access</h3>
+                <p>Required to fetch food data from our nutrition database, sync your preferences, and provide real-time recommendations.</p>
+            </div>
+
+            <h2><span class="icon">🔒</span> How We Protect Your Data</h2>
+            <ul>
+                <li>
+                    <span class="bullet">✓</span>
+                    <span>All data transmission is encrypted using industry-standard SSL/TLS protocols</span>
+                </li>
+                <li>
+                    <span class="bullet">✓</span>
+                    <span>Your personal information is stored securely on your device</span>
+                </li>
+                <li>
+                    <span class="bullet">✓</span>
+                    <span>We do not store your personal health data on our servers</span>
+                </li>
+                <li>
+                    <span class="bullet">✓</span>
+                    <span>We never sell or share your personal information with third parties</span>
+                </li>
+            </ul>
+
+            <div class="highlight-box">
+                <h3>✅ Your Data, Your Control</h3>
+                <p>All your personal information (name, age, gender, height, weight) stays on your device. Our API only receives anonymous requests to calculate BMI and fetch food recommendations - no personal identifiers are transmitted or stored on our servers.</p>
+            </div>
+
+            <h2><span class="icon">🍪</span> Cookies & Analytics</h2>
+            <p>NutriGuide does not use cookies or third-party analytics tools that track your personal information. We may collect anonymous usage statistics to improve our app's performance and user experience.</p>
+
+            <h2><span class="icon">👶</span> Children's Privacy</h2>
+            <p>NutriGuide is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.</p>
+
+            <h2><span class="icon">🔄</span> Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+
+            <h2><span class="icon">⚖️</span> Your Rights</h2>
+            <ul>
+                <li>
+                    <span class="bullet">1</span>
+                    <span><strong>Access:</strong> You can view all your data within the app settings</span>
+                </li>
+                <li>
+                    <span class="bullet">2</span>
+                    <span><strong>Correction:</strong> You can update your information at any time</span>
+                </li>
+                <li>
+                    <span class="bullet">3</span>
+                    <span><strong>Deletion:</strong> You can delete your data by uninstalling the app</span>
+                </li>
+                <li>
+                    <span class="bullet">4</span>
+                    <span><strong>Opt-out:</strong> You can disable notifications in device settings</span>
+                </li>
+            </ul>
+
+            <div class="contact-box">
+                <h3>📧 Contact Us</h3>
+                <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                <a href="mailto:support@nutriguide.app">support@nutriguide.app</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 NutriGuide. All rights reserved.</p>
+            <p><a href="/">Back to Home</a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const { loadFoodData, getFoodDatabase } = require('./data/foodLoader');
 const foodRoutes = require('./routes/food');
 
@@ -9,6 +10,9 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(cors());
 app.use(express.json());
+
+// Serve static files from public directory
+app.use(express.static(path.join(__dirname, '../public')));
 
 // Request logging
 app.use((req, res, next) => {
@@ -22,6 +26,9 @@ app.get('/', (req, res) => {
     name: 'NutriGuide API',
     version: '1.0.0',
     status: 'running',
+    pages: {
+      privacy_policy: '/privacy-policy.html'
+    },
     endpoints: {
       health: 'GET /',
       stats: 'GET /api/stats',

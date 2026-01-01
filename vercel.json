@@ -4,9 +4,21 @@
     {
       "src": "src/index.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
+    {
+      "src": "/privacy-policy.html",
+      "dest": "/public/privacy-policy.html"
+    },
+    {
+      "src": "/privacy-policy",
+      "dest": "/public/privacy-policy.html"
+    },
     {
       "src": "/(.*)",
       "dest": "src/index.js"
