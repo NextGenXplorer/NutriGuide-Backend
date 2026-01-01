@@ -1,5 +1,14 @@
 # NutriGuide Backend API
 
+![Vercel](https://img.shields.io/badge/Vercel-Deployed-brightgreen?logo=vercel)
+![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-5.x-000000?logo=express&logoColor=white)
+![License](https://img.shields.io/badge/License-ISC-blue)
+![Foods](https://img.shields.io/badge/Foods-1014-orange)
+![API](https://img.shields.io/badge/API-Live-success)
+
+**Live API:** [https://nutri-guide-backend.vercel.app](https://nutri-guide-backend.vercel.app)
+
 A Node.js/Express API for the NutriGuide Flutter app - Indian nutrition database with BMI calculation and personalized food recommendations.
 
 ## Features
